@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Array Methods Example</title>
+</head>
+<body>
+  <h1>Array Methods Example</h1>
+  
+  <h2>Original Array:</h2>
+  <p id="originalArray"></p>
+  
+  <h2>Modified Array:</h2>
+  <p id="modifiedArray"></p>
+  
+  <h2>Removed Item:</h2>
+  <p id="removedItem"></p>
+  
+  <h2>Removed First Item:</h2>
+  <p id="removedFirstItem"></p>
+  
+  <h2>Index of "banana":</h2>
+  <p id="bananaIndex"></p>
+  
+  <h2>Array as a String:</h2>
+  <p id="arrayAsString"></p>
+
+<script>
+  // Sample array containing both string and number elements
+  let data = [10, 'apple', 25, 'banana', 40, 'cherry'];
+
+  // Display the original array on the page
+  document.getElementById('originalArray').textContent = data.join(', ');
+
+  // Using push() to add an element at the end of the array
+  data.push('grape');
+  
+  // Using pop() to remove the last element from the array
+  let removedItem = data.pop();
+  document.getElementById('removedItem').textContent = removedItem;
+  
+  // Using shift() to remove the first element from the array
+  let firstItem = data.shift();
+  document.getElementById('removedFirstItem').textContent = firstItem;
+
+  // Using unshift() to add elements to the beginning of the array
+  data.unshift(5, 'orange');
+
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Function Methods</title>
+<script>
+  function calculateRectangleArea(width, height) {
+    return width * height;
+  }
+  
+  function getGreetingMessage() {
+    const now = new Date();
+    const hour = now.getHours();
+    
+    if (hour >= 0 && hour < 12) {
+      return 'Good morning!';
+    } else if (hour >= 12 && hour < 18) {
+      return 'Good afternoon!';
+    } else {
+      return 'Good evening!';
+    }
+  }
+  
+  // Example usage of the function methods
+  window.onload = function() {
+    const rectangleArea = calculateRectangleArea(5, 8);
+    document.getElementById('rectangleArea').textContent = `Rectangle Area: ${rectangleArea}`;
+    
+    const greetingMessage = getGreetingMessage();
+    document.getElementById('greeting').textContent = greetingMessage;
+  };
+</script>
+</head>
+<body>
+  <h1>JavaScript Function Methods Example</h1>
+  <p id="rectangleArea"></p>
+  <p id="greeting"></p>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+    padding: 10px 0;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: #444;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+    }
+    nav.active ul {
+      display: flex;
+    }
+    nav a {
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #666;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Responsive Web Design (Adrian Faria)</h1>
+</header>
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+  <div class="menu-icon">&#9776;</div>
+  
+</nav>
+<main>
+  <section>
+    <h2>Welcome to Our Website</h2>
+    <p>This is an example of a responsive webpage that adapts its layout for different screen sizes.</p>
+  </section>
+</main>
+</body>
+</html>

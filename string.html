@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>String Methods Example</title>
+<script>
+  function demonstrateStringMethods() {
+    var originalString = "Hello, world!";
+
+    // Length of the string
+    var length = originalString.length;
+
+    // Convert to uppercase
+    var uppercaseString = originalString.toUpperCase();
+
+    // Convert to lowercase
+    var lowercaseString = originalString.toLowerCase();
+
+    // Find the index of a substring
+    var indexOfComma = originalString.indexOf(",");
+
+    // Replace a substring
+    var replacedString = originalString.replace("world", "Universe");
+
+    // Extract a substring
+    var extractedSubstring = originalString.slice(7, 12);
+
+    var output = "Original String: " + originalString +
+      "<br>Length: " + length +
+      "<br>Uppercase: " + uppercaseString +
+      "<br>Lowercase: " + lowercaseString +
+      "<br>Index of ',': " + indexOfComma +
+      "<br>Replaced: " + replacedString +
+      "<br>Extracted Substring: " + extractedSubstring;
+
+    document.getElementById("output").innerHTML = output;
+  }
+</script>
+</head>
+<body>
+<h1>JavaScript String Methods</h1>
+<button onclick="demonstrateStringMethods()">Show String Methods</button>
+<div id="output"></div>
+</body>
+</html>
